@@ -7,10 +7,92 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <androidx.recyclerview.widget.RecyclerView
+    <RelativeLayout
+        android:id="@+id/button"
+        android:background="#e6e6e6"
         android:layout_width="match_parent"
+        android:layout_height="60dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="70dp"
+                android:text="Comment"
+                android:id="@+id/comments"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:padding="2dp"
+                android:width="3dp"
+                android:layout_margin="5dp"
+                android:background="#BB7E7E"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:layout_width="65dp"
+                android:text="albums"
+                android:id="@+id/albums"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:width="1dp"
+                android:padding="2dp"
+                android:textAlignment="center"
+                android:layout_margin="5dp"
+                android:background="#BB7E7E"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:layout_width="65dp"
+                android:text="photos"
+                android:id="@+id/photo"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:width="1dp"
+                android:padding="2dp"
+                android:layout_margin="5dp"
+                android:background="#BB7E7E"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:layout_width="65dp"
+                android:text="todos"
+                android:id="@+id/todos"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:width="1dp"
+                android:textAlignment="center"
+                android:padding="2dp"
+                android:layout_margin="5dp"
+                android:background="#BB7E7E"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:layout_width="65dp"
+                android:text="user"
+                android:id="@+id/user"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:width="1dp"
+                android:textAlignment="center"
+                android:padding="2dp"
+                android:layout_margin="5dp"
+                android:background="#BB7E7E"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_below="@id/button"
         android:orientation="vertical"
         android:padding="10dp" />
 
