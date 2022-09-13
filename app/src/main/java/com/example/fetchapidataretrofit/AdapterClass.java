@@ -15,7 +15,9 @@ import java.util.List;
 
 public class AdapterClass extends RecyclerView.Adapter<AdapterClass.ViewHolder>{
     List<ModelClass> arrayList;
+    List<ModelClassComments> modelClassComments;
     Context context;
+
 
     public AdapterClass(List<ModelClass> arrayList, Context context) {
         this.arrayList = arrayList;

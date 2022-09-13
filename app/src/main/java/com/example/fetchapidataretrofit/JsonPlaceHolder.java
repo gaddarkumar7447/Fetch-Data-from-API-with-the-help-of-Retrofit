@@ -9,4 +9,7 @@ import retrofit2.http.Query;
 public interface JsonPlaceHolder {
     @GET("posts")
     Call<List<ModelClass>> getPost();
+
+    @GET("comments")
+    Call<List<ModelClassComments>> getComments();
 }
